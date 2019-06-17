@@ -1,4 +1,4 @@
-// Components/Home.js
+// Components/Entourage.js
 
 import React from 'react'
 import {StyleSheet, View, Button, Text} from 'react-native'
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     }
 })
 
-class Home extends React.Component {
+class Entourage extends React.Component {
     render() {
         return (
             <View style={styles.main_container}>
@@ -33,4 +33,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default Entourage
