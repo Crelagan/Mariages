@@ -7,14 +7,14 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
 import Home from "./Components/Home/Home";
+import Navigation from "./Components/Navigation/Navigation";
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <Home/>
+      <Navigation/>
     );
   }
 }

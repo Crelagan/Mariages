@@ -23,11 +23,12 @@ const styles = StyleSheet.create({
 
 class Planning extends React.Component {
     render() {
+        const {navigate} = this.props.navigation;
         return (
             <View style={styles.main_container}>
                 <Text style={styles.welcome}>Planning</Text>
                 <Text style={styles.instructions}>En construction</Text>
-                <Button title='GO!!!' onPress={() => {}}/>
+                <Button title='GO!!!' onPress={() => navigate('EventDetail')}/>
             </View>
         )
     }

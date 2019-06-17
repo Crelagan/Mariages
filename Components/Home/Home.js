@@ -23,11 +23,14 @@ const styles = StyleSheet.create({
 
 class Home extends React.Component {
     render() {
+
+        const {navigate} = this.props.navigation;
+
         return (
             <View style={styles.main_container}>
                 <Text style={styles.welcome}>Si vous etes ici, c'est que l'on vous a invitez à cet heureux evenement qu'est notre mariage !</Text>
                 <Text style={styles.instructions}>Pour en savoir plus sur ce jour fabuleux cliquez ci dessous!</Text>
-                <Button title='GO!!!' onPress={() => {}}/>
+                <Button title='GO!!!' onPress={() => navigate('Dashboard')}/>
             </View>
         )
     }

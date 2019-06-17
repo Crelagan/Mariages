@@ -22,20 +22,24 @@ const styles = StyleSheet.create({
 })
 
 class Dashboard extends React.Component {
+
     render() {
+
+        const {navigate} = this.props.navigation;
+
         return (
             <View style={styles.main_container}>
                 <Text style={styles.welcome}>Ceci est un dashboard</Text>
                 <Text style={styles.instructions}>En construction</Text>
-                <Button title='Planning' onPress={() => {}}/>
-                <Button title='MoveTo' onPress={() => {}}/>
-                <Button title='Accomodation' onPress={() => {}}/>
-                <Button title='Tourism' onPress={() => {}}/>
-                <Button title='Covoiturage' onPress={() => {}}/>
-                <Button title='Témoin' onPress={() => {}}/>
-                <Button title='Contact' onPress={() => {}}/>
-                <Button title='Remerciement' onPress={() => {}}/>
-                <Button title='Photo' onPress={() => {}}/>
+                <Button title='Planning' onPress={() => navigate('Planning')}/>
+                <Button title='MoveTo' onPress={() => navigate('MoveTo')}/>
+                <Button title='Accomodation' onPress={() => navigate('Accomodation')}/>
+                <Button title='Tourism' onPress={() => navigate('Tourism')}/>
+                <Button title='Covoiturage' onPress={() => navigate('CarSharing')}/>
+                <Button title='Témoin' onPress={() => navigate('Entourage')}/>
+                <Button title='Contact' onPress={() => navigate('Contact')}/>
+                <Button title='Remerciement' onPress={() => navigate('Acknoledgement')}/>
+                <Button title='Photo' onPress={() => navigate('Photo')}/>
             </View>
         )
     }

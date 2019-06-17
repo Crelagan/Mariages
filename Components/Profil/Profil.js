@@ -23,11 +23,12 @@ const styles = StyleSheet.create({
 
 class Profil extends React.Component {
     render() {
+        const {navigate} = this.props.navigation;
         return (
             <View style={styles.main_container}>
                 <Text style={styles.welcome}>Profil</Text>
                 <Text style={styles.instructions}>Ca va arriver Promis</Text>
-                <Button title='GO!!!' onPress={() => {}}/>
+                <Button title='GO!!!' onPress={() => navigate('Dashboard')}/>
             </View>
         )
     }
