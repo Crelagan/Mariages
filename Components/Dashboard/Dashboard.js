@@ -25,9 +25,17 @@ class Dashboard extends React.Component {
     render() {
         return (
             <View style={styles.main_container}>
-                <Text style={styles.welcome}>Si vous etes ici, c'est que l'on vous a invitez à cet heureux evenement qu'est notre mariage !</Text>
-                <Text style={styles.instructions}>Pour en savoir plus sur ce jour fabuleux cliquez ci dessous!</Text>
-                <Button title='GO!!!' onPress={() => {}}/>
+                <Text style={styles.welcome}>Ceci est un dashboard</Text>
+                <Text style={styles.instructions}>En construction</Text>
+                <Button title='Planning' onPress={() => {}}/>
+                <Button title='MoveTo' onPress={() => {}}/>
+                <Button title='Accomodation' onPress={() => {}}/>
+                <Button title='Tourism' onPress={() => {}}/>
+                <Button title='Covoiturage' onPress={() => {}}/>
+                <Button title='Témoin' onPress={() => {}}/>
+                <Button title='Contact' onPress={() => {}}/>
+                <Button title='Remerciement' onPress={() => {}}/>
+                <Button title='Photo' onPress={() => {}}/>
             </View>
         )
     }

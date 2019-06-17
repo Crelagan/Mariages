@@ -25,8 +25,8 @@ class Profil extends React.Component {
     render() {
         return (
             <View style={styles.main_container}>
-                <Text style={styles.welcome}>Si vous etes ici, c'est que l'on vous a invitez à cet heureux evenement qu'est notre mariage !</Text>
-                <Text style={styles.instructions}>Pour en savoir plus sur ce jour fabuleux cliquez ci dessous!</Text>
+                <Text style={styles.welcome}>Profil</Text>
+                <Text style={styles.instructions}>Ca va arriver Promis</Text>
                 <Button title='GO!!!' onPress={() => {}}/>
             </View>
         )
