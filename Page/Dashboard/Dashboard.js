@@ -6,8 +6,7 @@ import {StyleSheet, View, Button, Text} from 'react-native'
 const styles = StyleSheet.create({
     main_container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        justifyContent: 'space-around',
     },
     welcome: {
         fontSize: 20,

@@ -2,8 +2,9 @@
 
 import React from 'react'
 import {StyleSheet, View, Button} from 'react-native'
-import { Container, Header, Content, List, ListItem, Left, Body, Right, Thumbnail, Text } from 'native-base';
+import { Header, Container, Badge, Content, List, ListItem, Left, Body, Right, Thumbnail, Text } from 'native-base';
 import entourage from '../../Helpers/Temoins'
+import ItemListEntourage from "../../Components/ItemListEntourage";
 
 const styles = StyleSheet.create({
     main_container: {
@@ -25,26 +26,12 @@ const styles = StyleSheet.create({
 
 class Entourage extends React.Component {
     render() {
-        const {navigate} = this.props.navigation;
-
-        const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
         return (
             <Container>
                 <Content>
                     <List>
                         {entourage.map(item =>
-                            <ListItem avatar>
-                                <Left>
-                                    <Thumbnail source={require('../../images/01.jpg')} />
-                                </Left>
-                                <Body>
-                                <Text>{item.nom + " " + item.prenom}</Text>
-                                <Text note>{item.mail}</Text>
-                                </Body>
-                                <Right>
-                                    <Text note>{item.role}</Text>
-                                </Right>
-                            </ListItem>
+                           <ItemListEntourage item={() => item}/>
                         )}
                     </List>
                 </Content>

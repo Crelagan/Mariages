@@ -7,8 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import Home from "./Components/Home/Home";
-import Navigation from "./Components/Navigation/Navigation";
+import Navigation from "./Components/Navigation";
 
 type Props = {};
 export default class App extends Component<Props> {

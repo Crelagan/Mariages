@@ -1,23 +1,30 @@
 // Navigation/Navigation.js
 
 import { createStackNavigator, createAppContainer } from 'react-navigation'
-import Home from "../Home/Home";
-import Dashboard from "../Dashboard/Dashboard";
-import Accomodation from "../Accomodation/Accomodation";
-import Acknoledgement from "../Acknoledgement/Acknoledgement";
-import Contact from "../Contact/Contact";
-import CarSharing from "../CarSharing/CarSharing";
-import Entourage from "../Entourage/Entourage";
-import EventDetail from "../EventDetail/EventDetail";
-import MoveTo from "../MoveTo/MoveTo";
-import Planning from "../Planning/Planning";
-import Profil from "../Profil/Profil";
-import Search from "../Search/search";
-import Tourism from "../Tourism/Tourism";
-import Announcement from "../Announcement/Announcement";
-import Photo from "../Photo/Photo";
+import Home from "../Page/Home/Home";
+import Dashboard from "../Page/Dashboard/Dashboard";
+import Accomodation from "../Page/Accomodation/Accomodation";
+import Acknoledgement from "../Page/Acknoledgement/Acknoledgement";
+import Contact from "../Page/Contact/Contact";
+import CarSharing from "../Page/CarSharing/CarSharing";
+import Entourage from "../Page/Entourage/Entourage";
+import EventDetail from "../Page/EventDetail/EventDetail";
+import MoveTo from "../Page/MoveTo/MoveTo";
+import Planning from "../Page/Planning/Planning";
+import Profil from "../Page/Profil/Profil";
+import Search from "../Page/Search/search";
+import Tourism from "../Page/Tourism/Tourism";
+import Announcement from "../Page/Announcement/Announcement";
+import Photo from "../Page/Photo/Photo";
+import Login from "../Page/Login/Login";
 
 const AppStackNavigator = createStackNavigator({
+    Login: { // Ici j'ai appelé la vue "Search" mais on peut mettre ce que l'on veut. C'est le nom qu'on utilisera pour appeler cette vue
+        screen: Login,
+        navigationOptions: {
+            title: 'login'
+        }
+    },
     Home: { // Ici j'ai appelé la vue "Search" mais on peut mettre ce que l'on veut. C'est le nom qu'on utilisera pour appeler cette vue
         screen: Home,
         navigationOptions: {
@@ -107,7 +114,7 @@ const AppStackNavigator = createStackNavigator({
         navigationOptions: {
             title: 'Tourisme'
         }
-    }
+    },
 })
 
 export default createAppContainer(AppStackNavigator)
