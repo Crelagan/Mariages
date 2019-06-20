@@ -8,7 +8,7 @@ class ItemListEntourage extends Component {
         return (
             <ListItem avatar>
                 <Left>
-                    <Thumbnail source={require('../../images/01.jpg')} />
+                    <Thumbnail source={require('../images/01.jpg')} />
                 </Left>
                 <Body>
                 <Text>{item.nom + " " + item.prenom}</Text>
