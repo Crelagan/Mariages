@@ -4,7 +4,11 @@ import {Badge, Body, Left, ListItem, Right, Text, Thumbnail} from "native-base";
 // create a component
 class ItemListEntourage extends Component {
     render() {
-        const {item} = this.props;
+
+        const {item} = this.props.item;
+
+        console.log(item);
+
         return (
             <ListItem avatar>
                 <Left>

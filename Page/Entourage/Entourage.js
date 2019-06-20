@@ -31,7 +31,7 @@ class Entourage extends React.Component {
                 <Content>
                     <List>
                         {entourage.map(item =>
-                           <ItemListEntourage item={() => item}/>
+                           <ItemListEntourage item={{item}}/>
                         )}
                     </List>
                 </Content>

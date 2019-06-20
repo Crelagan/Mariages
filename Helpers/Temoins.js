@@ -1,5 +1,3 @@
-// Helpers/filmsData.js
-
 export default data = [
     {
         nom: "Patate",
